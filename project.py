@@ -14,7 +14,7 @@ mysql = MySQL(app)
 @app.route('/home', methods=['GET', 'POST'])
 def home():
 
-    return render_template("test.html")
+    return render_template("home.html")
 
 
 if __name__ == "__main__":

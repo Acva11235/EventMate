@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Event</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon2.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/home_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb5761a778.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/cb5761a778.css" crossorigin="anonymous">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+      
+        .content {
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;
+        }
+      
+        .fade-out {
+          opacity: 0;
+        }
+        .text-animation span {
+            opacity: 0;
+            animation: fadeInText 0.5s ease forwards;
+          }
+          .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1.2em;
+            background-color: black;
+            animation: cursorBlink 0.5s infinite;
+            margin-left: 2px;
+          }
+          @keyframes fadeInText {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          @keyframes cursorBlink {
+            0%, 100% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+          }
+      </style>
+</head>
+
+<body>
+    <section class="bg-upper">
+    <nav class="navbar navbar-expand-lg" id="navbar" style="">
+        <div class="container-fluid">
+          <a class="navbar-brand"  href="#" style=""><strong><i style="font-size:xx-large; color:white">EventMate</i></strong></a>
+          <button class="navbar-toggler" style="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end nav" id="navbarNavDropdown">
+            <form class="d-flex" role="search">
+                <p style="visibility: hidden;">ds</p>
+                <input class="form-control me-2 bg-upper" type="search" placeholder="Search Event" aria-label="Search">
+                <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+              </form>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-link side">
+                <a type="button" style="border:none;font-size:large;text-decoration:none;" class="btn btn-secondary nav-btn" href="/home"><strong>Home</strong></a>
+              </li>
+              <li class="nav-link side">
+                <a type="button" style="border:none;font-size:large;text-decoration:none;" class="btn btn-secondary nav-btn" href="/about"><strong>About</strong></a>
+              </li>              
+              <li class="nav-link side">
+                <a type="button" style="border:none;font-size:large" class="btn btn-secondary nav-btn" href="login.html"><strong>Logout</strong></a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="content logo">
+    <h1 class="text-animation" style="color: white; font-size:100px">EventMate</h1>
+  </div>
+  <span class="cursor"></span>
+  <h1 class="heads">Events For You</h1>
+  <div class="container" style="margin-bottom:3%">
+    <div class="row">
+
+        <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+            <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+            <div class="card-body" >
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+                </p>
+            </div>
+        </div>
+        <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+          <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+          <div class="card-body" >
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+              </p>
+          </div>
+        </div>
+        <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+        <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+        <div class="card-body" >
+            <h5 class="card-title">Lorem ipsum</h5>
+            <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+            </p>
+        </div>
+    </div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+      <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+      <div class="card-body" >
+          <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+          </p>
+      </div>
+  </div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+    <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+    <div class="card-body" >
+        <h5 class="card-title">Lorem ipsum</h5>
+        <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+        </p>
+    </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+  <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+  <div class="card-body" >
+      <h5 class="card-title">Lorem ipsum</h5>
+      <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+      </p>
+  </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+  <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+  <div class="card-body" >
+      <h5 class="card-title">Lorem ipsum</h5>
+      <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+      </p>
+  </div>
+</div>
+
+
+
+
+        
+    </div>
+</div>
+<h1 class="heads">Trending</h1>
+<div class="container" style="margin-bottom:3%">
+  <div class="row">
+
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+          <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+          <div class="card-body" >
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+              </p>
+          </div>
+      </div>
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+        <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+        <div class="card-body" >
+            <h5 class="card-title">Lorem ipsum</h5>
+            <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+            </p>
+        </div>
+      </div>
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+      <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+      <div class="card-body" >
+          <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+          </p>
+      </div>
+  </div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+    <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+    <div class="card-body" >
+        <h5 class="card-title">Lorem ipsum</h5>
+        <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+        </p>
+    </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+  <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+  <div class="card-body" >
+      <h5 class="card-title">Lorem ipsum</h5>
+      <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+      </p>
+  </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+<img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+<div class="card-body" >
+    <h5 class="card-title">Lorem ipsum</h5>
+    <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+    </p>
+</div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+<img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+<div class="card-body" >
+    <h5 class="card-title">Lorem ipsum</h5>
+    <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+    </p>
+</div>
+</div>
+
+
+
+
+      
+  </div>
+</div>
+<h1 class="heads">Upcoming events</h1>
+<div class="container" style="margin-bottom:3%">
+  <div class="row">
+
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+          <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+          <div class="card-body" >
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+              </p>
+          </div>
+      </div>
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+        <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+        <div class="card-body" >
+            <h5 class="card-title">Lorem ipsum</h5>
+            <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+            </p>
+        </div>
+      </div>
+      <div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+      <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+      <div class="card-body" >
+          <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+          </p>
+      </div>
+  </div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+    <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+    <div class="card-body" >
+        <h5 class="card-title">Lorem ipsum</h5>
+        <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+        </p>
+    </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+  <img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+  <div class="card-body" >
+      <h5 class="card-title">Lorem ipsum</h5>
+      <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+      </p>
+  </div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+<img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+<div class="card-body" >
+    <h5 class="card-title">Lorem ipsum</h5>
+    <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+    </p>
+</div>
+</div><div class="card col-lg-12 col-md-6 " style="max-width: 13rem; display: flex; justify-content: center; margin-left:24px">
+<img src="" href="www.google.com" style="height:175px" class="card-img-top" alt="">
+<div class="card-body" >
+    <h5 class="card-title">Lorem ipsum</h5>
+    <p class="card-text">aLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel varius dolor. Integer fring
+    </p>
+</div>
+</div>
+
+
+
+
+      
+  </div>
+</div>
+
+</section>
+  <script>
+    window.addEventListener('scroll', function() {
+        var content = document.querySelector('.content');
+        var scrollPosition = window.scrollY;
+    
+        if (scrollPosition > 50) {
+          content.classList.add('fade-out');
+          document.querySelector('.cursor').style.display = 'inline-block';
+          var lastLetter = document.querySelector('.text-animation span:last-child');
+          var cursor = document.querySelector('.cursor');
+          var lastLetterRect = lastLetter.getBoundingClientRect();
+          var contentRect = content.getBoundingClientRect();
+          cursor.style.top = (lastLetterRect.top + window.scrollY - contentRect.top) + 'px';
+          cursor.style.left = (lastLetterRect.right + window.scrollX - contentRect.left) + 'px';
+        } else {
+          content.classList.remove('fade-out');
+          document.querySelector('.cursor').style.display = 'none';
+        }
+      });
+    
+      var textElements = document.querySelectorAll('.text-animation');
+    
+      textElements.forEach(function(element) {
+        var text = element.textContent.trim();
+        var letters = text.split('');
+    
+        element.innerHTML = '';
+    
+        letters.forEach(function(letter, index) {
+          var span = document.createElement('span');
+          span.textContent = letter;
+          span.style.animationDelay = (index * 0.1) + 's'; // Adjust the delay as needed
+          element.appendChild(span);
+        });
+      });
+  </script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+    
