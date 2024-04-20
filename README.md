@@ -31,8 +31,9 @@ To start using EventMate, follow these simple steps:
 1. Clone the repository: `git clone https://github.com/Acva11235/EventMate.git`
 2. Install the necessary dependencies. `pip install -r requirements.txt`
 3. Install stopwords and punkit for rake: `python -m nltk.downloader stopwords` and `python -m nltk.downloader punkt`
-4. Customize the scores and values based on your college's needs. (Available in collaborative filtering and popularity methods)
-5. Run the application and start discovering exciting events! `hybrid_recommender.py`
+4. Connect to existing database or create one using data folder.
+5. Customize the scores and values based on your college's needs. (Available in collaborative filtering and popularity methods)
+6. Run the application and start discovering exciting events! `hybrid_recommender.py`
 
 ## 🤝 Support
 
